@@ -1,0 +1,67 @@
+.about_us-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-title-color);
+    margin-bottom: 10px;
+    }
+
+.about_us-item {
+    // margin-left: 30px;
+    width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.about_us-item {
+    &:not(:first-child) {
+        margin-left: 30px;
+      } 
+}
+
+.about_us-list {
+    display: flex;
+}
+
+
+.about_us {
+    padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.about_us_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+    display: flex;
+ }
+ .about_us-title {
+   &:not(:last-child) {
+    margin-right: 50px }
+   }
+
+    .about_us-icon_antena,
+    .about_us-icon_clock,
+    .about_us-icon_diagram,
+    .about_us-icon_astronaut  {
+        height: 70px;
+        width: 70px;
+    }  
+
+    .about_us-pictures {
+        height: 120px;
+        background-color: #F5F4FA;
+        margin-bottom: 30px;
+        @include centerflex();
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        }

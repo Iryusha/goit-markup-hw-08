@@ -1,0 +1,88 @@
+.footer_form {
+    display: flex;
+    flex-wrap: wrap;
+     margin-right: 93px; 
+    // &:focus,
+    // &:hover {
+    //     border: 1px solid rgba(255, 255, 255, 0.3);
+    // }
+ 
+}
+.strong {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
+    color: var(--primary-title-color);
+    /* margin-bottom: 20px; */
+    padding-top: 15px;
+}
+.write_send {
+   display: flex;
+   margin-top: -25px;
+  
+}
+.footer_input {
+    outline: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    color: var(--primary-title-color);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// .footer-form:focus
+// .footer-form:hover {
+//     border: 1px solid rgba(255, 255, 255, 0.3); 
+// }
+.btn_write {
+    @include centerflex();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    width: 200px;
+    height: 50px;
+    left: 1185px;
+    top: 2787px;
+    border: none;
+    background-color: var(--secondary-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon_send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.btn_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--primary-title-color);
+    margin-right: 10px; 
+}
