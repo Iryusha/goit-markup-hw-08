@@ -41,9 +41,27 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .hero_btn {
@@ -621,17 +639,38 @@ top: 261px; */
   margin-bottom: 10px;
 }
 
-.about_us-item {
-  width: 270px;
-  flex-basis: calc(100% / 4 - 30px);
+@media screen and (max-width: 767px) {
+  .about_us-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.about_us-item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .about_us-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
 
-.about_us-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .about_us-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about_us-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about_us-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .about_us {
