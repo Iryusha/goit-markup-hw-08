@@ -1,8 +1,12 @@
 .we-do {
     padding-top: 47px;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 } 
 .we_do_list {
+  
     display: flex;
     flex-basis: calc(100% / 3 - 90px);
     

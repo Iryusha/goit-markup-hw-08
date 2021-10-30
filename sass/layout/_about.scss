@@ -56,7 +56,16 @@
 .about_us {
     padding-top: 94px;
   padding-bottom: 47px;
-}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+      
+  }
+
 
 .about_us_text {
     font-family: Roboto;
