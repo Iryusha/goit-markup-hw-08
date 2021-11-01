@@ -1,4 +1,5 @@
 .logo_foot {
+    
     margin-bottom: 20px;
     height: 31px;
     width: 145px;
@@ -83,14 +84,24 @@
 }
 .head_footer_container {
     display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        // justify-content: space-around;
+        flex-direction: row;
+    }
     /* padding-top: 60px;
     /* padding-bottom: 60px; */
 }
 .footer_container {
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items:baseline; 
     margin-right: 70px;
-    
+    }  
 }
 .footer_social-list {
     @include centerflex();
@@ -136,6 +147,7 @@
 }
 .footer_web {
     margin-right: 70px;
+   
     /* margin-left: 215px; */
 }
 .footer_social-item {
