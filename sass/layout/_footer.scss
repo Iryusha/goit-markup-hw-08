@@ -8,6 +8,18 @@
 .Logostudio_footer {
     color: #ffffff;
 }
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+    align-items: flex-end;
+    width: 231px;
+}
+}
+
+
     
 
 .adress {
@@ -34,8 +46,10 @@
     padding-bottom: 60px;
     /* height: 252px; */
     max-width: 1600px;
-    margin: auto;
-    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .Logo_footer {
@@ -69,6 +83,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 145px;
     height: 16px;
     left: 516px;
@@ -83,26 +99,38 @@
     text-transform: uppercase;
 }
 .head_footer_container {
-    display: flex;
-    @media screen and (min-width: 768px) {
+    display: block;
+    // flex-direction: column;
+    // align-items: center;
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
+        // text-align: center;
         // justify-content: space-around;
-        flex-direction: row;
+        // flex-direction: row;
     }
     /* padding-top: 60px;
     /* padding-bottom: 60px; */
 }
 .footer_container {
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
-    @media screen and (min-width: 1200px) {
+    // @media screen and (max-width: 767px) {
+    //     display: block;
+    // }
+    // @media screen and (min-width: 1200px) {
     display: flex;
-    align-items:baseline; 
-    margin-right: 70px;
-    }  
+    flex-direction: column;
+    // align-items:baseline; 
+    // margin-right: 70px;
+    @media screen and (min-width: 768px) {
+    flex-direction: row;
 }
+    @media screen and (min-width: 1200px) {
+    padding-right: 0px;
+    align-items:baseline;
+    margin-right: 70px;
+}
+}  
+
 .footer_social-list {
     @include centerflex();
 }
@@ -146,7 +174,21 @@
     }
 }
 .footer_web {
-    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+   
+    
+    @media screen and (min-width: 768px) {
+    margin-right: 168px;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-around;
+    // flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-right: 70px; }
    
     /* margin-left: 215px; */
 }
@@ -159,4 +201,7 @@
     
     margin-left: 10px;
     }
+}
+.footer_social {
+    margin-bottom: 60px;
 }

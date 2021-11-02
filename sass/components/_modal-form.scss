@@ -123,6 +123,10 @@ top: 261px; */
     font-weight: normal;
     letter-spacing: 0.03em;
     cursor: pointer;
+    @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+}
 }
  .form_checkbox { 
  .span {
@@ -142,6 +146,17 @@ top: 261px; */
     &:checked + .form_checkbox .span {
     background-color: var(--secondary-text-color);
     border: 2px solid var(--secondary-text-color);
+}
+}
+.form_agry {
+    
+    color: #2196f3;
+    @media screen and (min-width: 1200px) {
+    margin-left: 5px;
+    // line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196f3;
 }
 }
   
