@@ -29,13 +29,13 @@
           aria-expanded="false"
           aria-controls="mobile-menu">
         
-          <svg
+          <svg class="burger-menu"
             width="40"
             height="40"
             aria-label="переключатель мобильного меню"
           >
           
-          <use class="icon-menu" href="./imeges/sprite.svg#icon-menu_24px"></use>
+          <use  href="./imeges/sprite.svg#icon-menu_24px"></use>
           
           </svg>
         </button>
@@ -55,14 +55,14 @@
                 </nav>
                 <ul class="header_contact">
                     <li class="contact_list link">
-                        <a class="contact_item link" href="mailto:info@devstudio.com">
+                        <a class="contact_item contact_item--top link" href="mailto:info@devstudio.com">
                             <svg class="email_icon">
                                 <use href="./imeges/sprite.svg#icon-email"></use>
                             </svg>
                             info@devstudio.com</a>
                     </li>
                     <li class="contact_list link">
-                        <a class="contact_item link" href="tel:+380961111111">
+                        <a class="contact_item contact_item--bottom link" href="tel:+380961111111">
                             <svg class="tel_icon">
                                 <use href="./imeges/sprite.svg#icon-phone"></use>
                             </svg>
@@ -78,7 +78,7 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
             >
-              <svg
+              <svg class="close-burger-menu"
                 width="40"
                 height="40"
                 aria-label="переключатель мобильного меню"
@@ -87,7 +87,8 @@
               </svg>
             </button>
 
-          <nav class="header_nav_mobile heder_list"> 
+           
+            <div class="container__mobile">
            <ul class="header_list_mobile link">
             <li class="header_item_mobile link">
               <a class="heder_link_mobile heder_link--current link" href="Студия">Студия</a>
@@ -99,41 +100,34 @@
               <a class="heder_link_mobile link" href="Контакты">Контакты</a>
             </li>
             </ul>
-            </nav>
+                
         
-        <div>
         <ul class="header_contact_mobile">
             <li class="contact_list_mobile link">
-                <a class="contact_item_mobile link" href="mailto:info@devstudio.com">
-                <svg class="email_icon_mobile">
-                <use href="./imeges/sprite.svg#icon-email"></use>
-                </svg>
+                <a class="contact_item_mobile contact_item_mobile--current link" href="mailto:info@devstudio.com">
                 info@devstudio.com</a>
             </li>
             <li class="contact_list_mobile link">
                 <a class="contact_item_mobile link" href="tel:+380961111111">
-                <svg class="tel_icon_mobile">
-                    <use href="./imeges/sprite.svg#icon-phone"></use>
-                </svg>
                 +38 096 111 11 11</a>
             </li>
         </ul>
-        <ul class="soc-block link">
-            <li class="soc-block__item">
-              <a class="soc-block__link" href="">Instagram</a>
+        <ul class="soc-mobile link">
+            <li class="soc-mobile__item">
+              <a class="soc-mobile__link" href="">Instagram</a>
             </li>
-            <li class="soc-block__item">
-              <a class="soc-block__link" href="">Twitter</a>
+            <li class="soc-mobile__item">
+              <a class="soc-mobile__link" href="">Twitter</a>
             </li>
-            <li class="soc-block__item">
-              <a class="soc-block__link" href="">Facebook</a>
+            <li class="soc-mobile__item">
+              <a class="soc-mobile__link" href="">Facebook</a>
             </li>
-            <li class="soc-block__item">
-              <a class="soc-block__link" href="">LinkedIn</a>
+            <li class="soc-mobile__item">
+              <a class="soc-mobile__link" href="">LinkedIn</a>
             </li>
           </ul>
-        </div>       
-    </div>
+             
+        </div>
        </div>
     </header>
     <main class="hero_center">
