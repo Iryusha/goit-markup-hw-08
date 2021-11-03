@@ -45,18 +45,19 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100px;
 }
 
 .header_item_mobile {
   margin-bottom: 32px;
+  position: relative;
 }
 
-.heder_link_mobil {
+.heder_link_mobile {
   position: relative;
-  display: inline-block;
-  text-decoration: none;
   font-family: null;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -64,12 +65,16 @@
   color: black;
 
   @media screen and (max-width: 479px) {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
     font-family: null;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: inherit;
+    color: black;
   }
 
   &:hover,
@@ -77,19 +82,19 @@
     color: var(--secondary-text-color);
   }
 }
-// .heder_link--current {
-//   color: var(--secondary-text-color);
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     bottom: -5px;
-//     left: 0;
-//     width: 100%;
-//     height: 4px;
-//     background-color: var(--secondary-text-color);
-//     border-radius: 4px;
-//   }
-// }
+.heder_link--current {
+  color: var(--secondary-text-color);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-text-color);
+    border-radius: 4px;
+  }
+}
 .header_contact_mobile {
   margin: 0 0 64px 0;
   padding: 0;
@@ -109,7 +114,7 @@
 .contact_item_mobile {
   display: block;
   text-decoration: none;
-  font-family: null;
+  font-family: roboto;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.16;
@@ -117,24 +122,25 @@
   color: var(--secondary-title-color);
 
   @media screen and (max-width: 479px) {
-    font-family: null;
+    font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: var(--secondary-title-color);
   }
 }
-.mobile-contacts__link--current {
-  font-family: null;
+.contact_item_mobile--current {
+  font-family: Roboto;
   font-size: 34px;
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-bottom: 30px;
 
   @media screen and (max-width: 479px) {
-    font-family: null;
+    font-family: roboto;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
