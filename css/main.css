@@ -218,13 +218,12 @@ body {
 }
 
 .modal {
-  max-width: 450px;
+  max-width: 100%;
+  width: 450px;
   height: auto;
   background: #ffffff;
   border-radius: 4px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -378,7 +377,7 @@ top: 261px; */
 
 @media screen and (max-width: 1199px) {
   .form_checkbox {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.16;
   }
 }
@@ -402,6 +401,13 @@ top: 261px; */
 .form_agry {
   color: #2196f3;
   margin-left: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .form_agry {
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -443,7 +449,15 @@ top: 261px; */
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  margin-top: 30px;
+  margin-top: 80px;
+}
+
+.check_form {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  position: absolute;
 }
 
 @media screen and (max-width: 1199px) {
